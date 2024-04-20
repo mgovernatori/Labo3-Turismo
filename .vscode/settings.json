@@ -1,0 +1,7 @@
+{
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.trimAutoWhitespace": false,
+	"diffEditor.ignoreTrimWhitespace": true,
+	"files.trimTrailingWhitespaceInRegexAndStrings": true,
+	"prettier.useTabs": true
+}
