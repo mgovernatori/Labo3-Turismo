@@ -1,7 +1,6 @@
 @import url(https://db.onlinewebfonts.com/c/c4d8819fda4c3fd79e36cedcc8d422bb?family=Halyard+Display);
 
 
-
 body {
 	background-color: #fff1d4;
 	font-family: Halyard Display;
@@ -13,7 +12,7 @@ body {
 }
 
 .logo {
-	font-size: 24px;
+	font-size: 28px;
 	padding: 0;
 	text-decoration: overline;
 	color: #f04a60;
@@ -44,7 +43,7 @@ body {
 .space-navbar::before{
 	content: '';
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	height: 100%;
 	top: 0;
 	left: 0;
@@ -61,10 +60,11 @@ body {
 	margin-left: 20px;
 }
 
-.nav-item:hover {
+.nav-item:hover{
 	background-color: #C5283D;
-	transition: background-color 0.5s ease-in-out;
 	border-radius: 5px;
+	transition: background-color 0.5s ease;
+	cursor: pointer;
 }
 
 .main-image {
@@ -81,7 +81,7 @@ body {
 	padding: 20px;
 	width: fit-content;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-	background-color: #C3C2C0;
+	background-color: #dbd4c4;
 	border-radius: 10px;
 	display: flex;
 	flex-wrap: wrap;
@@ -90,16 +90,12 @@ body {
 }
 
 .feat-article h1 {
-	background-color: #C3C2C0;
 	margin: 0;
 	padding: 3px;
 	color: #C5283D;
 	font-weight: 100;
-	text-decoration: underline;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-	border-radius: 5px;
-	border: 2px solid #C5283D;
-	border-style: ridge;
+	border-radius: 10px;
 	width: fit-content;
 }
 
@@ -124,8 +120,8 @@ body {
 	width: 45%;
 	height: 90%;
 	float: right;
-	border: 1px solid white;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	border: .5px solid #C3C2C0;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .blog{
@@ -144,12 +140,17 @@ body {
 }
 
 .post-card {
-	background-color: #fbfce8;
+	background-color: #fffef6;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	margin: 10px;
 	padding: 10px;
 	width: 300px;
+}
+
+.post-card:hover{
+	transform: scale(1.05);
+	transition: transform .5s ease;
 }
 
 .post-card img{
@@ -177,11 +178,11 @@ body {
 
 .post-date {
 	font-size: 12px;
-	color: #888;
+	color: #212227;
 }
 
 .tips{
-	background-color: #fde7ba;
+	background-color: #dad2c2;
 	width: 50vw;
 	margin: auto;
 	margin-top: 20px;
@@ -204,7 +205,6 @@ body {
 	position: relative;
 	width: 55%;
 	height: 100px;
-	border: 1px solid #212227;
 	text-align: center;
 	border-radius: 1px;
 	z-index: 2;
@@ -213,6 +213,7 @@ body {
 .tips-card:hover{
 	transform: scale(1.04);
 	cursor: pointer;
+	transition: transform .5s ease-in-out;
 }
 
 .tips-card a{
@@ -235,6 +236,8 @@ body {
 	width: 100%;
 	object-fit: none;
 	object-position: center;
+	border-radius: 5px;
+	border: 1px solid #212227;
 }	
 
 .left{
@@ -247,15 +250,15 @@ body {
 
 .footer{
 	background-color: #C5283D;
-	height: 50px;
+	height: 80px;
 	width: 100%;
 	text-align: center;
-	padding: 0;
 	color: #F6FFF8;
 }
 
 .footer h3{
-	padding: 10px;
+	padding-top: 5px;
+	margin: 10px;
 }
 
 @media (max-width: 1024px)
