@@ -9,10 +9,19 @@
 			href="https://db.onlinewebfonts.com/c/c4d8819fda4c3fd79e36cedcc8d422bb?family=Halyard+Display"
 			rel="stylesheet"
 		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="space-navbar">
 			<a href="" class="logo">ViajesYA</a>
+			<input type="checkbox" id="check">
+			<label for="check" class="icons">
+				<i class="bx bx-menu" id="menu-icon"></i>
+				<i class="bx bx-x" id="close-icon"></i>
+			</label>
 			<nav class="navbar">
 				<a href="#" class="nav-item">Inicio</a>
 				<a href="#" class="nav-item">Internacionales</a>
@@ -21,10 +30,9 @@
 			</nav>
 		</div>
 		<div class="main-image"></div>
-		<main class="feat-article">
-			<article>
-				<div class="feat-image"></div>
-				<h1>ARTÍCULO DESTACADO</h1>
+		<main>
+			<article class="feat-article">
+				<h1>Destino destacado</h1>
 				<h3>Belize</h3>
 				<p>
 					Con su densa selva, sus aguas turquesas, su rica vida marina y sus
@@ -41,11 +49,12 @@
 					los templos y palacios de Xunantunich y la antigua ciudad de Cahal
 					Pech.
 				</p>
+				<div class="feat-image"></div>
 			</article>
 		</main>
-		<div class="blog">
+		<section class="blog">
 			<h1>NUEVOS POSTEOS</h1>
-			<article class="post-card">
+			<div class="post-card">
 				<img
 					src="https://images.ctfassets.net/i3kf1olze1gn/3V7QEBAqVQxC4CSoPyByyN/e779badee8eac971c19dcc0b0ba982da/Kefalonia.jpg?q=55&w=680"
 					alt=""
@@ -63,8 +72,8 @@
 					>
 					<a href="#" class="read-more">Leer más</a>
 				</footer>
-			</article>
-			<article class="post-card">
+			</div>
+			<div class="post-card">
 				<img
 					src="https://images.ctfassets.net/i3kf1olze1gn/2JrXDdM75Y9pAjFQIZ45pF/c91059e8180a1b2103141db19ea2daf1/slow-ibiza-zImMn5pyLXc-unsplash.jpg?q=55&w=680"
 					alt=""
@@ -81,8 +90,8 @@
 					>
 					<a href="#" class="read-more">Leer más</a>
 				</footer>
-			</article>
-			<article class="post-card">
+			</div>
+			<div class="post-card">
 				<img
 					src="https://images.ctfassets.net/i3kf1olze1gn/4jqv5QGvf7nN87KeSlgj40/a571bd1bb724ce10fb4be271143abdf2/raja_ampat_december.jpg?q=55&w=680"
 					alt=""
@@ -95,12 +104,116 @@
 					de color turquesa.
 				</p>
 				<footer class="post-footer">
-					<time class="post-date" datetime="2024-04-12"
-						>12 de abril de 2024</time
+					<time class="post-date" datetime="2024-04-03"
+						>3 de abril de 2024</time
 					>
 					<a href="#" class="read-more">Leer más</a>
 				</footer>
-			</article>
-		</div>
+			</div>
+			<div class="post-card">
+				<img
+					src="https://images.ctfassets.net/i3kf1olze1gn/2QW5pPT4u6DKCf5ILVG317/07bd6a3f63b6d201f82f6c2c9b29f1de/altea_spring.jpg?q=55&w=680"
+					alt=""
+				/>
+				<h2 class="post-title">Alicante</h2>
+				<p class="post-content">
+					Sede de la espectacular Costa Blanca, esta provincia tiene mucho más
+					que ofrecer más allá de su atestada costa, donde le esperan idílicos
+					paisajes y majestuosas montañas.
+				</p>
+				<footer class="post-footer">
+					<time class="post-date" datetime="2024-03-21"
+						>21 de marzo de 2024</time
+					>
+					<a href="#" class="read-more">Leer más</a>
+				</footer>
+			</div>
+			<div class="post-card">
+				<img
+					src="https://images.ctfassets.net/i3kf1olze1gn/7urGFElNSCUyMZ6rkqHLui/9ca28b9338649547b19f4f4b135485d7/katie-kalmykova-JkgYrViv8Q8-unsplash.jpg?q=55&w=680"
+					alt=""
+				/>
+				<h2 class="post-title">Cerdeña</h2>
+				<p class="post-content">
+					La escarpada isla paradisíaca de Cerdeña es uno de los lugares más
+					cautivadores de Europa. La mejor forma de explorarla es alquilar un
+					coche (o mejor aún, una scooter), y disfrutar de un paseo por las
+					épicas carreteras costeras.
+				</p>
+				<footer class="post-footer">
+					<time class="post-date" datetime="2024-03-10"
+						>10 de marzo de 2024</time
+					>
+					<a href="#" class="read-more">Leer más</a>
+				</footer>
+			</div>
+			<div class="post-card">
+				<img
+					src="https://images.ctfassets.net/i3kf1olze1gn/1jiNFDJ4mVPDXxFee4TIaS/45b7130a71dc5bd1691313e8c7d7da2c/Bagan.jpg?q=55&w=680"
+					alt=""
+				/>
+				<h2 class="post-title">Bagan</h2>
+				<p class="post-content">
+					Bagan es uno de los destinos de cuento de hadas más encantadores del
+					Sudeste Asiático. Este antiguo reino birmano es un antiguo mundo de
+					templos enclavado en un paisaje tropical y brumoso.
+				</p>
+				<footer class="post-footer">
+					<time class="post-date" datetime="2024-03-02"
+						>2 de marzo de 2024</time
+					>
+					<a href="#" class="read-more">Leer más</a>
+				</footer>
+			</div>
+		</section>
+		<section class="tips">
+			<h1>¿Buscas tips?</h1>
+			<div class="tips-card left">
+				<img
+					src="https://img.cronista.com/files/image/143/143851/5ff79e709663a_950_534!.jpg?s=a04d78733391c9f91fc16b94f60099cf&d=1711809810"
+					alt=""
+				/>
+				<a href="#">Berlín</a>
+			</div>
+			<div class="tips-card right">
+				<img
+					src="https://img.static-af.com/images/media/45CB9A13-B167-4842-8EA805D0CC7A4D04/?w=480&aspect_ratio=2:1"
+					alt=""
+				/>
+				<a href="#">París</a>
+			</div>
+			<div class="tips-card left">
+				<img
+					src="https://static.eldiario.es/clip/ac5016f6-7afd-43f8-9d87-f38c82e5a9f1_16-9-discover-aspect-ratio_default_0.jpg"
+					alt=""
+				/>
+				<a href="#">Londres</a>
+			</div>
+			<div class="tips-card right">
+				<img
+					src="https://www.egipto.net/f/egipto/egipto/guia/el-cairo.jpg"
+					alt=""
+				/>
+				<a href="#">Cairo</a>
+			</div>
+			<div class="tips-card left">
+				<img
+					src="https://www.nippon.com/es/ncommon/contents/nipponblog/108723/108723.jpg"
+					alt=""
+				/>
+				<a href="#">Tokio</a>
+			</div>
+			<div class="tips-card right">
+				<img
+					src="https://www.civitatis.com/blog/wp-content/uploads/2023/10/vista-opera-house-sidney-australia.jpg"
+					alt=""
+				/>
+				<a href="#">Sídney</a>
+			</div>
+			<a href="#">Más destinos...</a>
+		</section>
+		<footer class="footer">
+			<h3>Hecho por: Marco Governatori</h3>
+		</footer>
 	</body>
 </htsml>
